@@ -164,79 +164,104 @@
 // Задан числовой массив 2, 3, 7, 13, 5, 0, 20. Найти максимальное значение  и минимальное не сипользуя стандартные методы. 
 //Найти среднее значение суммы всех элементов массива. Удалить первый и последний элемент массива.
 
-var summ = 0;
-var max = 2;
-var min = max;
-var arr = [2, 3, 7, 13, 5, 0, 20];
-	for (var i = 0; i < arr.length; i++) {
-			summ = summ + arr[i];
-	}	console.log(summ / arr.length);
-		for (var i = 1; i < arr.length; i++) {
-			if (max < arr[i]) {max = arr[i]};
-			if (min > arr[i]) {min = arr[i]};
-	}	console.log(max);
-		console.log(min);
-	arr.shift(0);
-	console.log(arr);
-	arr.pop(6);
-	console.log(arr);
+//var summ = 0;
+//var max = 2;
+//var min = max;
+//var arr = [2, 3, 7, 13, 5, 0, 20];
+//	for (var i = 0; i < arr.length; i++) {
+//			summ = summ + arr[i];
+//	}	console.log(summ / arr.length);
+//		for (var i = 1; i < arr.length; i++) {
+//			if (max < arr[i]) {max = arr[i]};
+//			if (min > arr[i]) {min = arr[i]};
+//	}	console.log(max);
+//		console.log(min);
+//	arr.shift(0);
+//	console.log(arr);
+//	arr.pop(6);
+//	console.log(arr);
 
 //Есть три вершины. Координаты X, Y, Z заданы как целые числа. 
 //Нужно определить - является ли треугольник с заданными координатами прямоугольным.
 //В решении использовать только математические и логические операторы. Результат в консоль.
 //Обязательное условие: все вычисления производить только с целыми числами. 
 //Любой переход в дробные числа запрещен!
-console.log('Triangl')
-var x1 = 2;
-var x2 = 2;
-var x3 = 13;
-var y1 = 3;
-var y2 = 10;
-var y3 = 3;
-var a, b, c;
-a = +Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-b = +Math.sqrt(Math.pow(x3 - x2, 2) + Math.pow(y2 - y3, 2));
-c = +Math.sqrt(Math.pow(x3 - x1, 2) + Math.pow(y3 - y1, 2));
-var arr = [a, b, c];
-console.log(arr);
-for (var i = 0; i < arr.length - 1; i++) {
-	for (var j = 0; j < arr.length - 1 - i; j++) {
-		if (arr[j + 1] > arr[j]) {
-			var t = arr[j + 1];
-			arr[j + 1] = arr[j];
-			arr[j] = t;
-		} 
-	} 
-}
-console.log(arr);
-var s = Math.pow(arr[0], 2); 
-var n = Math.pow(arr[1], 2);
-var m = Math.pow(arr[2], 2);
-var summ = s - n - m;
-	console.log(summ)
-		if (summ === 0) {
-			console.log(true);}
-			else {
-			console.log(false);}
+//console.log('Triangl')
+//var x1 = 2;
+//var x2 = 2;
+//var x3 = 13;
+//var y1 = 3;
+//var y2 = 10;
+//var y3 = 3;
+//var a, b, c;
+//a = +Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+//b = +Math.sqrt(Math.pow(x3 - x2, 2) + Math.pow(y2 - y3, 2));
+//c = +Math.sqrt(Math.pow(x3 - x1, 2) + Math.pow(y3 - y1, 2));
+//var arr = [a, b, c];
+//console.log(arr);
+//for (var i = 0; i < arr.length - 1; i++) {
+//	for (var j = 0; j < arr.length - 1 - i; j++) {
+//		if (arr[j + 1] > arr[j]) {
+//			var t = arr[j + 1];
+//			arr[j + 1] = arr[j];
+//			arr[j] = t;
+//		} 
+//	} 
+//}
+//console.log(arr);
+//var s = Math.pow(arr[0], 2); 
+//var n = Math.pow(arr[1], 2);
+//var m = Math.pow(arr[2], 2);
+//var summ = s - n - m;
+//	console.log(summ)
+//		if (summ === 0) {
+//			console.log(true);}
+//			else {
+//			console.log(false);}
 
 
 //Создать массив из чисел. Выполнить сортировку массива по возрастанию методом пузырька. 
 //Запрещено использовать стандартные методы.
 
-var arr = [2, 6, 9, 0, 3, 87, 3, 20, 10]
+//var arr = [2, 6, 9, 0, 3, 87, 3, 20, 10]
+//
+//for (var i = 0; i < arr.length - 1; i++) {
+//		for (var j = 0; j < arr.length - 1 - i; j++){
+//				if (arr[j + 1] > arr[j]){
+//					var t = arr[j + 1];
+//					arr[j + 1] = arr[j];
+//					arr[j] = t;
+//					
+//				}
+//		}
+//}
+//console.log(arr);
 
-for (var i = 0; i < arr.length - 1; i++) {
-		for (var j = 0; j < arr.length - 1 - i; j++){
-				if (arr[j + 1] > arr[j]){
-					var t = arr[j + 1];
-					arr[j + 1] = arr[j];
-					arr[j] = t;
-					
-				}
-		}
-}
-console.log(arr);
 
+// Перевод числа из десятичной системы в двоичную и обратно.
+
+var a = 300;
+var j;
+var n;
+var arr = [];	
+	for (a; a >= 1;) {
+			j = a / 2; 
+				if (a%2 == 0) {
+					n = 0
+				} else {
+					n = 1
+				};
+			arr.unshift(n);
+			a = Math.floor(j);	
+	}
+	console.log(arr);
+	var summ = 0;
+		for (i = 0; i < arr.length; i++) {
+				var num;
+				num = arr[i] * Math.pow(2, [arr.length - 1 - i]);
+				summ = summ + num;
+				console.log(num);
+		} console.log(summ);
 
 
 
