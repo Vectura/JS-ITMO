@@ -187,12 +187,12 @@
 //Обязательное условие: все вычисления производить только с целыми числами. 
 //Любой переход в дробные числа запрещен!
 //console.log('Triangl')
-//var x1 = 2;
-//var x2 = 2;
-//var x3 = 13;
-//var y1 = 3;
-//var y2 = 10;
-//var y3 = 3;
+//var x1 = 0;
+//var x2 = 0;
+//var x3 = 4;
+//var y1 = 0;
+//var y2 = 3;
+//var y3 = 0;
 //var a, b, c;
 //a = +Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 //b = +Math.sqrt(Math.pow(x3 - x2, 2) + Math.pow(y2 - y3, 2));
@@ -240,28 +240,28 @@
 
 // Перевод числа из десятичной системы в двоичную и обратно.
 
-var a = 300;
-var j;
-var n;
-var arr = [];	
-	for (a; a >= 1;) {
-			j = a / 2; 
-				if (a%2 == 0) {
-					n = 0
-				} else {
-					n = 1
-				};
-			arr.unshift(n);
-			a = Math.floor(j);	
-	}
-	console.log(arr);
-	var summ = 0;
-		for (i = 0; i < arr.length; i++) {
-				var num;
-				num = arr[i] * Math.pow(2, [arr.length - 1 - i]);
-				summ = summ + num;
-				console.log(num);
-		} console.log(summ);
+//var a = 300;
+//var j;
+//var n;
+//var arr = [];	
+//	for (a; a >= 1;) {
+//			j = a / 2; 
+//				if (a%2 == 0) {
+//					n = 0
+//				} else {
+//					n = 1
+//				};
+//			arr.unshift(n);
+//			a = Math.floor(j);	
+//	}
+//	console.log(arr);
+//	var summ = 0;
+//		for (i = 0; i < arr.length; i++) {
+//				var num;
+//				num = arr[i] * Math.pow(2, [arr.length - 1 - i]);
+//				summ = summ + num;
+//				console.log(num);
+//		} console.log(summ);
 
 
 
